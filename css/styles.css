@@ -1,0 +1,853 @@
+/* A4 - 1 */
+.restaurant-menu-page {
+    position: relative;
+    width: 595px;
+    height: 842px;
+    background: #19181D;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Rectangle 6 */
+.top-bar {
+    position: absolute;
+    width: 595px;
+    height: 51px;
+    left: 0px;
+    top: 0px;
+    background: #D9D9D9;
+    opacity: 0.5;
+}
+
+/* Group 4 */
+.restaurant-name-large {
+    position: absolute;
+    width: 218px;
+    height: 32px;
+    left: 111px;
+    top: 247px;
+}
+
+/* В ЦЕНТРЕ ГОРОДА */
+.section-title {
+    position: absolute;
+    width: 218px;
+    height: 32px;
+    left: 111px;
+    top: 247px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+/* Group 5 */
+.booking-wrapper {
+    position: absolute;
+    width: 131px;
+    height: 20px;
+    left: 445px;
+    top: 253px;
+}
+
+/* ЗАБРОНИРОВАТЬ */
+.booking-text {
+    position: absolute;
+    width: 105px;
+    height: 16px;
+    left: 445px;
+    top: 255px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Group 1 */
+.booking-circle-wrapper {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 556px;
+    top: 253px;
+}
+
+/* Ellipse 1 */
+.booking-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 556px;
+    top: 253px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* Arrow 1 */
+.booking-arrow {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 560px;
+    top: 263px;
+    border: 1px solid #000000;
+}
+
+/* Group 1 (дубль) */
+.content-area {
+    position: absolute;
+    width: 519px;
+    height: 539px;
+    left: 53px;
+    top: 253px;
+}
+
+/* Arrow 1 (дубль) */
+.arrow-duplicate {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 560px;
+    top: 253px;
+    border: 1px solid #000000;
+}
+
+/* Group 1 (дубль 2) */
+.content-area-duplicate {
+    position: absolute;
+    width: 519px;
+    height: 539px;
+    left: 53px;
+    top: 253px;
+}
+
+/* Arrow 1 (дубль 2) */
+.arrow-duplicate-2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 560px;
+    top: 253px;
+    border: 1px solid #000000;
+}
+
+/* Group 1 (дубль 3) */
+.nav-dot-left {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 53px;
+    top: 772px;
+}
+
+/* Ellipse 1 */
+.nav-dot-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 53px;
+    top: 772px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* Arrow 1 */
+.nav-dot-arrow {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 57px;
+    top: 782px;
+    border: 1px solid #000000;
+}
+
+/* Group 3 */
+.nav-dot-right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 416px;
+    top: 772px;
+}
+
+/* Ellipse 1 */
+.nav-dot-circle-right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 416px;
+    top: 772px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* Arrow 1 */
+.nav-dot-arrow-right {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 420px;
+    top: 782px;
+    border: 1px solid #000000;
+}
+
+/* Group 2 */
+.nav-dot-center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 233px;
+    top: 772px;
+}
+
+/* Ellipse 1 */
+.nav-dot-circle-center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 233px;
+    top: 772px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* Arrow 1 */
+.nav-dot-arrow-center {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 237px;
+    top: 782px;
+    border: 1px solid #000000;
+}
+
+/* Group 1 (дубль 4) */
+.nav-dot-center-duplicate {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 233px;
+    top: 772px;
+}
+
+/* Ellipse 1 */
+.nav-dot-circle-center-duplicate {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 233px;
+    top: 772px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+/* Arrow 1 */
+.nav-dot-arrow-center-duplicate {
+    box-sizing: border-box;
+    position: absolute;
+    width: 12px;
+    height: 0px;
+    left: 237px;
+    top: 782px;
+    border: 1px solid #000000;
+}
+
+/* Group 6 */
+.categories-container {
+    position: absolute;
+    width: 519px;
+    height: 26px;
+    left: 51px;
+    top: 301px;
+}
+
+/* Line 1 */
+.categories-line-main {
+    position: absolute;
+    width: 519px;
+    height: 0px;
+    left: 51px;
+    top: 326px;
+    border: 2px solid #615F6A;
+    transform: rotate(0.11deg);
+}
+
+/* САЛАТЫ */
+.category-salads {
+    position: absolute;
+    width: 52px;
+    height: 16px;
+    left: 173px;
+    top: 301px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* СУПЫ */
+.category-soups {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 250px;
+    top: 301px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #797683;
+}
+
+/* ГОРЯЧЕЕ */
+.category-hot {
+    position: absolute;
+    width: 56px;
+    height: 16px;
+    left: 313px;
+    top: 301px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #797683;
+}
+
+/* ПИЦЦА */
+.category-pizza {
+    position: absolute;
+    width: 47px;
+    height: 16px;
+    left: 394px;
+    top: 301px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #797683;
+}
+
+/* Line 2 */
+.category-active-line {
+    position: absolute;
+    width: 49px;
+    height: 0px;
+    left: 175px;
+    top: 326px;
+    border: 1px solid #DF6C2A;
+}
+
+/* Rectangle 1 */
+.dish-image-first {
+    position: absolute;
+    width: 124px;
+    height: 113px;
+    left: 53px;
+    top: 349px;
+    background: url(image);
+}
+
+/* Group 7 */
+.dish-group-first {
+    position: absolute;
+    width: 355px;
+    height: 21px;
+    left: 214px;
+    top: 338px;
+}
+
+/* Салат Цезарь */
+.dish-name-first {
+    position: absolute;
+    width: 79px;
+    height: 16px;
+    left: 214px;
+    top: 343px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Line 3 */
+.dish-line-first {
+    position: absolute;
+    width: 198px;
+    height: 0px;
+    left: 312px;
+    top: 350.97px;
+    border: 0.5px solid #797683;
+    transform: rotate(-0.3deg);
+}
+
+/* 23 руб. */
+.dish-price-first {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 531px;
+    top: 338px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Group 2 */
+.dish-group-second {
+    position: absolute;
+    width: 355px;
+    height: 19px;
+    left: 216px;
+    top: 381px;
+}
+
+/* Салат Нисуаз */
+.dish-name-second {
+    position: absolute;
+    width: 79px;
+    height: 16px;
+    left: 216px;
+    top: 384px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Line 4 */
+.dish-line-second {
+    position: absolute;
+    width: 198px;
+    height: 0px;
+    left: 313px;
+    top: 392px;
+    border: 0.5px solid #797683;
+}
+
+/* 26 руб. */
+.dish-price-second {
+    position: absolute;
+    width: 39px;
+    height: 16px;
+    left: 532px;
+    top: 381px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Group 3 */
+.dish-group-third {
+    position: absolute;
+    width: 354px;
+    height: 21px;
+    left: 214px;
+    top: 419px;
+}
+
+/* Салат с креветками */
+.dish-name-third {
+    position: absolute;
+    width: 117px;
+    height: 16px;
+    left: 214px;
+    top: 424px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Line 5 */
+.dish-line-third {
+    position: absolute;
+    width: 155px;
+    height: 0px;
+    left: 354px;
+    top: 432px;
+    border: 0.5px solid #797683;
+}
+
+/* 27 руб. */
+.dish-price-third {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 530px;
+    top: 419px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Блюда от шефа */
+.chef-title {
+    position: absolute;
+    width: 175px;
+    height: 32px;
+    left: 53px;
+    top: 494px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+/* Rectangle 2 */
+.chef-dish-left {
+    position: absolute;
+    width: 136px;
+    height: 149px;
+    left: 53px;
+    top: 548px;
+    background: url(image.png);
+}
+
+/* Rectangle 3 */
+.chef-dish-right {
+    position: absolute;
+    width: 136px;
+    height: 149px;
+    left: 414px;
+    top: 548px;
+    background: url(image.png);
+}
+
+/* Rectangle 4 */
+.chef-dish-center {
+    position: absolute;
+    width: 136px;
+    height: 149px;
+    left: 233px;
+    top: 548px;
+    background: url(image.png);
+}
+
+/* Название блюда */
+.chef-dish-name-left {
+    position: absolute;
+    width: 94px;
+    height: 16px;
+    left: 53px;
+    top: 702px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Название блюда */
+.chef-dish-name-right {
+    position: absolute;
+    width: 94px;
+    height: 16px;
+    left: 416px;
+    top: 705px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Название блюда */
+.chef-dish-name-center {
+    position: absolute;
+    width: 94px;
+    height: 16px;
+    left: 233px;
+    top: 705px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов */
+.chef-dish-desc-left {
+    position: absolute;
+    width: 146px;
+    height: 39px;
+    left: 52px;
+    top: 721px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов и особенностей,которые необходимо учесть клиентаи */
+.dish-desc-first {
+    position: absolute;
+    width: 353px;
+    height: 39px;
+    left: 216px;
+    top: 361px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов и особенностей,которые необходимо учесть клиентаи */
+.dish-desc-second {
+    position: absolute;
+    width: 353px;
+    height: 39px;
+    left: 216px;
+    top: 401px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов и особенностей,которые необходимо учесть клиентаи */
+.dish-desc-third {
+    position: absolute;
+    width: 353px;
+    height: 39px;
+    left: 216px;
+    top: 442px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов */
+.chef-dish-desc-center {
+    position: absolute;
+    width: 146px;
+    height: 39px;
+    left: 233px;
+    top: 723px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* Небольшое описание блюда,состоящее из его ингредиентов */
+.chef-dish-desc-right {
+    position: absolute;
+    width: 146px;
+    height: 39px;
+    left: 416px;
+    top: 723px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7.5px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+/* 52 руб. */
+.chef-price-left {
+    position: absolute;
+    width: 37px;
+    height: 16px;
+    left: 153px;
+    top: 749px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #DF6C2A;
+}
+
+/* 64 руб. */
+.chef-price-center {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 335px;
+    top: 749px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #DF6C2A;
+}
+
+/* 48 руб. */
+.chef-price-right {
+    position: absolute;
+    width: 38px;
+    height: 16px;
+    left: 512px;
+    top: 754px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #DF6C2A;
+}
+
+/* Rectangle 5 */
+.background-overlay {
+    position: absolute;
+    width: 595px;
+    height: 210px;
+    left: 0px;
+    top: 0px;
+    background: url(image.png);
+    opacity: 0.7;
+}
+
+/* GourmetResto */
+.logo-text {
+    position: absolute;
+    width: 80px;
+    height: 16px;
+    left: 31px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Group 8 */
+.nav-container {
+    position: absolute;
+    width: 263px;
+    height: 16px;
+    left: 203px;
+    top: 27px;
+    z-index: 2;
+}
+
+/* Контакты */
+.nav-contacts {
+    position: absolute;
+    width: 59px;
+    height: 16px;
+    left: 407px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Команда */
+.nav-team {
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    left: 249px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Меню */
+.nav-menu {
+    position: absolute;
+    width: 34px;
+    height: 16px;
+    left: 203px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* Бронирование */
+.nav-book {
+    position: absolute;
+    width: 84px;
+    height: 16px;
+    left: 311px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* +375 (29) 123-45-02 */
+.phone {
+    position: absolute;
+    width: 100px;
+    height: 16px;
+    left: 477px;
+    top: 27px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    z-index: 2;
+}
