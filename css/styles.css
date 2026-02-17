@@ -153,7 +153,7 @@
   height: 113px;
   left: 53px;
   top: 349px;
-  background: url('image.jpg') center/cover;
+  background: url('../images/rectangle-1.png') center/cover;
   border-radius: 4px;
 }
 
@@ -310,7 +310,7 @@
   height: 149px;
   left: 53px;
   top: 548px;
-  background: url('image.png') center/cover;
+  background: url('../images/rectangle-2.png') center/cover;
   border-radius: 8px;
 }
 
@@ -320,7 +320,7 @@
   height: 149px;
   left: 233px;
   top: 548px;
-  background: url('image.png') center/cover;
+  background: url('../images/rectangle-3.png') center/cover;
   border-radius: 8px;
 }
 
@@ -330,7 +330,7 @@
   height: 149px;
   left: 414px;
   top: 548px;
-  background: url('image.png') center/cover;
+  background: url('../images/rectangle-4.png') center/cover;
   border-radius: 8px;
 }
 
