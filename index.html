@@ -3,12 +3,565 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название вашего проекта</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Уютный ресторан в центре города. Меню, блюда от шефа, бронирование столиков.">
+    <title>GourmetResto</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<h1>Добро пожаловать в ресторан Gourmetresto!</h1>
-<p>Это стартовая страница моего веб-приложения.</p>
-<script src="js/script.js"></script>
+
+<body itemscope itemtype="https://schema.org/Restaurant">
+
+    <!-- Обязательные свойства Schema.org -->
+    <meta itemprop="name" content="GourmetResto">
+    <meta itemprop="servesCuisine" content="Европейская кухня">
+    <meta itemprop="priceRange" content="$$">
+
+    <!-- Skip-link -->
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header" style="background-image: url('images/image.png');" itemprop="header">
+    <div class="overlay"></div>
+
+    <div class="header-container">
+
+        <nav class="topbar" aria-label="Основная навигация">
+            <a href="#" class="logo">GourmetResto</a>
+
+            <ul class="nav__list">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#reservation">Бронирование</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+
+            <a href="tel:+375291234502" class="nav__phone">+375 (29) 123‑45‑02</a>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-row">
+                <h1>Уютный ресторан<br>в центре города</h1>
+
+                <a href="#reservation" class="hero-btn">
+                    Забронировать <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+
+
+
+    <!-- ================= MAIN ================= -->
+    <main id="main" class="main" itemprop="mainContent">
+
+        <!-- ================= О НАС ================= -->
+        <section id="about" class="about">
+           <div class="about__text">
+             <h2>О ресторане</h2>
+
+             <p class="about__lead">
+            Мы верим, что еда — это эмоции. Поэтому каждое блюдо создаётся с вниманием к деталям.
+             </p>
+
+             <p>
+            Атмосфера нашего ресторана построена на ощущении уюта, спокойствия и эстетики — здесь хочется задержаться,
+            наслаждаясь вкусами и моментом.
+             </p>
+
+            <p>
+            Наша команда — это люди, которые искренне любят своё дело: от шеф‑повара до официантов, каждый создаёт
+            тёплый опыт для гостей.
+            </p>
+           </div>
+
+        <div class="about-gallery">
+        <button class="gallery-btn prev" aria-label="Предыдущее фото">‹</button>
+
+        <div class="gallery-track">
+            <img src="images/about1.jpg" alt="Интерьер ресторана">
+            <img src="images/about2.jpg" alt="Сервировка стола">
+            <img src="images/about3.webp" alt="Команда ресторана">
+            <img src="images/about4.webp" alt="Детали интерьера">
+             <img src="images/about5.webp" alt="Атмосфера зала"> 
+             <img src="images/about6.webp" alt="Работа команды">
+        </div>
+
+        <button class="gallery-btn next">›</button>
+    </div>
+</section>
+
+
+        <!-- ================= МЕНЮ ================= -->
+<section id="menu" class="menu" itemscope itemtype="https://schema.org/Menu">
+    <h2 itemprop="name">Меню</h2>
+
+    <!-- Категории -->
+    <ul class="menu-categories">
+        <li class="active" data-category="salads">Салаты</li>
+        <li data-category="soups">Супы</li>
+        <li data-category="hot">Горячее</li>
+        <li data-category="pizza">Пицца</li>
+        <li data-category="desserts">Десерты</li>
+        <li data-category="chef">Блюда от шефа</li>
+    </ul>
+
+    <div class="menu-content">
+
+        <!-- САЛАТЫ -->
+        <section class="menu-list active" id="salads">
+            <h3 class="visually-hidden">Салаты</h3>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/salad1.webp" alt="Салат Цезарь" itemprop="image">
+                    <figcaption class="visually-hidden">Салат Цезарь</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Салат Цезарь</h3>
+                    <p class="dish-desc">Обжаренная курица, ромейн, томаты, соус цезарь, выдержанный сыр, сухарики из молочного хлеба, панированное яйцо.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">23 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/salad3.png" alt="Салат Нисуаз" itemprop="image">
+                    <figcaption class="visually-hidden">Салат Нисуаз</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Салат Нисуаз</h3>
+                    <p class="dish-desc">Тунец, яйцо, фасоль, оливки, картофель.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">26 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/salad2.webp" alt="Салат с креветками" itemprop="image">
+                    <figcaption class="visually-hidden">Салат с креветками</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Салат с креветками</h3>
+                    <p class="dish-desc">Обжаренные креветки, ромейн, томаты, выдержанный сыр, микс салатов, цитрусовая заправка.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">27 руб.</span></p>
+            </article>
+        </section>
+
+        <!-- СУПЫ -->
+        <section class="menu-list" id="soups">
+            <h3 class="visually-hidden">Супы</h3>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/soup1.webp" alt="Томатный суп" itemprop="image">
+                    <figcaption class="visually-hidden">Томатный суп</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Томатный суп</h3>
+                    <p class="dish-desc">Томаты, базилик, сливки, чеснок.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">18 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/soup2.webp" alt="Луковый с копченым сыром" itemprop="image">
+                    <figcaption class="visually-hidden">Луковый с копченым сыром</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Луковый с копченым сыром</h3>
+                    <p class="dish-desc">Говяжий бульон, карамелизированный лук, хлебные гренки под шапкой сыра моцарелла.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">21 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/soup3.webp" alt="Чаудер с морепродуктами" itemprop="image">
+                    <figcaption class="visually-hidden">Чаудер с морепродуктами</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Чаудер с морепродуктами</h3>
+                    <p class="dish-desc">Сливочный рыбный бульон с морепродуктами, чесночное масло, цедра лайма, петрушка</p>
+                </div>
+
+                <p class="price"><span itemprop="price">19 руб.</span></p>
+            </article>
+        </section>
+
+        <!-- ГОРЯЧЕЕ -->
+        <section class="menu-list" id="hot">
+            <h3 class="visually-hidden">Горячие блюда</h3>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/hot1.png" alt="Стейк" itemprop="image">
+                    <figcaption class="visually-hidden">Стейк</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Стейк</h3>
+                    <p class="dish-desc">Говядина, специи, сливочное масло.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">45 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/hot2.jpg" alt="Ризотто с морским гребешком и цветной капустой" itemprop="image">
+                    <figcaption class="visually-hidden">Ризотто с морским гребешком и цветной капустой</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Ризотто с морским гребешком и цветной капустой</h3>
+                    <p class="dish-desc">Ризотто классико с добавлением бульона биск и пасты из вяленых томатов с морским гребешком и жаренной цветной капустой.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">28 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/hot3.webp" alt="Котлеты из щуки с картофельным пюре" itemprop="image">
+                    <figcaption class="visually-hidden">Котлеты из щуки с картофельным пюре</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Котлеты из щуки с картофельным пюре</h3>
+                    <p class="dish-desc">Котлеты из щуки, картофельное пюре, соус берблан.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">32 руб.</span></p>
+            </article>
+        </section>
+
+        <!-- ПИЦЦА -->
+        <section class="menu-list" id="pizza">
+            <h3 class="visually-hidden">Пицца</h3>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/pizza1.webp" alt="Пицца Маргарита" itemprop="image">
+                    <figcaption class="visually-hidden">Пицца Маргарита</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Маргарита</h3>
+                    <p class="dish-desc">Томаты, моцарелла, базилик.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">22 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/pizza2.webp" alt="Пицца Пепперони" itemprop="image">
+                    <figcaption class="visually-hidden">Пицца Пепперони</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Пепперони</h3>
+                    <p class="dish-desc">Пепперони, моцарелла, томатный соус.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">25 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/pizza3.webp" alt="Пицца 4 сыра" itemprop="image">
+                    <figcaption class="visually-hidden">Пицца 4 сыра</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">4 сыра</h3>
+                    <p class="dish-desc">Моцарелла, дорблю, пармезан, чеддер.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">27 руб.</span></p>
+            </article>
+        </section>
+
+        <!-- ДЕСЕРТЫ -->
+        <section class="menu-list" id="desserts">
+            <h3 class="visually-hidden">Десерты</h3>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/dessert1.webp" alt="Тирамису" itemprop="image">
+                    <figcaption class="visually-hidden">Тирамису</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Тирамису</h3>
+                    <p class="dish-desc">Кофе, маскарпоне, какао.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">18 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/dessert2.webp" alt="Баскский чизкейк с соусом манго-маракуйя" itemprop="image">
+                    <figcaption class="visually-hidden">Баскский чизкейк с соусом манго-маракуйя</figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Баскский чизкейк с соусом манго-маракуйя</h3>
+                    <p class="dish-desc">Сливочный сыр, ваниль, печенье.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">19 руб.</span></p>
+            </article>
+
+            <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+                <figure>
+                    <img src="images/dessert3.webp" alt="Шоколадный фондан с вишней и пломбиром " itemprop="image">
+                    <figcaption class="visually-hidden">Шоколадный фондан с вишней и пломбиром </figcaption>
+                </figure>
+
+                <div class="dish-info">
+                    <h3 class="dish-name" itemprop="name">Шоколадный фондан с вишней и пломбиром </h3>
+                    <p class="dish-desc">Шоколадный десерт с мороженым, сладкой вишней и шоколадными чипсами.</p>
+                </div>
+
+                <p class="price"><span itemprop="price">21 руб.</span></p>
+            </article>
+        </section>
+
+        <!-- БЛЮДА ОТ ШЕФА -->
+        <section class="menu-list" id="chef">
+            <h3 class="visually-hidden">Блюда от шефа</h3>
+
+            <div class="chef-carousel">
+                <button class="chef-prev" aria-label="Предыдущее блюдо">‹</button>
+
+                <div class="chef-track">
+
+                    <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
+                        <figure>
+                            <img src="images/chef1.png" alt="Сибас с капонатой по-сицилийски" itemprop="image">
+                            <figcaption class="visually-hidden">Сибас с капонатой по-сицилийскиФирменное блюдо</figcaption>
+                        </figure>
+                        <h4 itemprop="name">Филе сибаса с овощным рагу, салатом из кинзы и базилика и оливками каламата.</h4>
+                        <p class="price"><span itemprop="price">52 руб.</span></p>
+                    </article>
+
+                    <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
+                        <figure>
+                            <img src="images/chef2.webp" alt="Лосось с тропической пеной и кремом из тыквы " itemprop="image">
+                            <figcaption class="visually-hidden">Лосось с тропической пеной и кремом из тыквы </figcaption>
+                        </figure>
+                        <h4 itemprop="name">Лосось, пюре из тыквы с кокосовым молоком и терияки, пена на основе манго, маракуйи и кинзы, пудра из свеклы.</h4>
+                        <p class="price"><span itemprop="price">64 руб.</span></p>
+                    </article>
+
+                    <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
+                        <figure>
+                            <img src="images/chef3.webp" alt="Утиная грудка с трюфельной перловкой и печеным яблоком" itemprop="image">
+                            <figcaption class="visually-hidden">Утиная грудка с трюфельной перловкой и печеным яблоком</figcaption>
+                        </figure>
+                        <h4 itemprop="name">Утиная грудка медум ре, трюфельная перловая каша, печеное целое яблоко с грецким орехом, медом и мускатным орехом.</h4>
+                        <p class="price"><span itemprop="price">48 руб.</span></p>
+                    </article>
+
+                    <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
+                        <figure>
+                            <img src="images/chef4.jpg" alt="Филе-миньон с винным соусом и пряным бататом" itemprop="image">
+                            <figcaption class="visually-hidden">Филе-миньон с винным соусом и пряным бататом</figcaption>
+                        </figure>
+                        <h4 itemprop="name">Филе-миньон с винным соусом и пряным бататом</h4>
+                        <p class="price"><span itemprop="price">58 руб.</span></p>
+                    </article>
+
+                    <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
+                        <figure>
+                            <img src="images/chef5.webp" alt="Тальятелле с копченой индейкой и вешенками" itemprop="image">
+                            <figcaption class="visually-hidden">Тальятелле с копченой индейкой и вешенками</figcaption>
+                        </figure>
+                        <h4 itemprop="name">Домашняя паста с копченой индейкой и хрустящими вешенками в терияки соусе. </h4>
+                        <p class="price"><span itemprop="price">62 руб.</span></p>
+                    </article>
+
+                </div>
+
+                <button class="chef-next" aria-label="Следующее блюдо">›</button>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+
+        <!-- ================= ASIDE ================= -->
+        <aside id="reservation" class="sidebar">
+
+            <div class="reservation-widget">
+                <h2>Быстрое бронирование</h2>
+                <form class="reservation-form">
+    <label>Дата:
+        <input type="date" name="date">
+    </label>
+
+    <label>Время:
+        <input type="time" name="time">
+    </label>
+
+    <label>Гостей:
+        <select name="guests">
+            <option value="">—</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+        </select>
+    </label>
+
+    <label>Телефон:
+        <input type="tel" name="phone" placeholder="Введите номер телефона для связи">
+    </label>
+
+    <label>Пожелания:
+        <textarea name="comment" rows="3" placeholder="Ваши пожелания (необязательно)"></textarea>
+    </label>
+
+    <button class="btn btn-primary">Отправить заявку</button>
+</form>
+
+ </div>
+
+            <div class="aside-block promo">
+                <h3>Акции и спецпредложения</h3>
+
+                <p>
+                    Счастливые часы — скидка 20%
+                    <time datetime="16:00">с 16:00</time>
+                    до
+                    <time datetime="18:00">18:00</time>
+                </p>
+
+                <p>
+                    Бизнес‑ланч — выгодные предложения
+                    <time datetime="12:00">с 12:00</time>
+                    до
+                    <time datetime="16:00">16:00</time>
+                </p>
+            </div>
+
+        </aside>
+
+        <!-- ================= ОТЗЫВЫ ================= -->
+        <section id="reviews" class="reviews">
+            <h2>Отзывы гостей</h2>
+
+            <article class="review">
+    <div class="review-header">
+        <img src="images/avatar1.webp" alt="Аватар пользователя" class="review-avatar">
+
+        <div class="review-user">
+            <h3 class="review-name">Александра</h3>
+            <div class="review-stars">★★★★★</div>
+        </div>
+    </div>
+
+    <p class="review-text">
+        Восхитительное место! Блюда очень вкусные, обслуживание на высоте. Атмосфера уютная, хочется возвращаться снова и снова.
+    </p>
+
+    <div class="review-photos">
+        <img src="images/rev1-1.webp" alt="Фото блюда">
+        <img src="images/rev1-2.webp" alt="Фото блюда">
+    </div>
+</article>
+
+
+<article class="review">
+    <div class="review-header">
+        <img src="images/avatar2.webp" alt="Аватар пользователя" class="review-avatar">
+
+        <div class="review-user">
+            <h3 class="review-name">Артём</h3>
+            <div class="review-stars">★★★★★</div>
+        </div>
+    </div>
+
+    <p class="review-text">
+        Отличное место для семейного ужина. Особенно понравились мидии и стейк — всё очень вкусно и красиво подано. Спасибо персоналу за внимание!
+    </p>
+
+    <div class="review-photos">
+        <img src="images/rev2-1.webp" alt="Фото блюда">
+        <img src="images/rev2-2.webp" alt="Фото блюда">
+    </div>
+</article>
+
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+    <div class="container">
+
+        <!-- Адрес -->
+        <p class="footer-address">г. Минск, пл. Свободы, 5</p>
+
+        <!-- Телефон + почта -->
+        <div class="footer-contacts-row">
+
+            <div class="footer-contact">
+                <svg class="footer-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.07 22 2 13.93 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+                </svg>
+                <a href="tel:+375291234502" class="footer__phone">+375 (29) 123‑45‑02</a>
+            </div>
+
+            <div class="footer-contact">
+                <svg class="footer-icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v1.2l10 5.6 10-5.6V6a2 2 0 00-2-2zm0 4.4l-8.55 4.78a1 1 0 01-.9 0L2 8.4V18a2 2 0 002 2h16a2 2 0 002-2V8.4z"/>
+                </svg>
+                <a href="mailto:info@gourmetresto.by" class="footer__email">info@gourmetresto.by</a>
+            </div>
+
+        </div>
+
+        <!-- Линия -->
+        <div class="footer-line"></div>
+
+        <!-- Копирайт -->
+        <p class="footer-copy">© 2026 GourmetResto</p>
+
+        <!-- Карта -->
+        <div class="footer-map">
+    <iframe 
+        src="https://yandex.by/map-widget/v1/?ll=27.553620%2C53.902240&z=17&l=map&pt=27.553620,53.902240,pm2rdm"
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
