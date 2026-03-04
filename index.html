@@ -15,7 +15,7 @@
     <meta itemprop="servesCuisine" content="Европейская кухня">
     <meta itemprop="priceRange" content="$$">
 
-    <!-- Skip-link -->
+ 
     <a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
     <!-- ================= HEADER ================= -->
@@ -25,7 +25,7 @@
     <div class="header-container">
 
         <nav class="topbar" aria-label="Основная навигация">
-            <a href="#" class="logo">GourmetResto</a>
+            <a href="index.html" class="logo" aria-label="На главную страницу">GourmetResto</a>
 
             <ul class="nav__list">
                 <li><a href="#about">О нас</a></li>
@@ -40,7 +40,7 @@
 
         <div class="hero">
             <div class="hero-row">
-                <h1>Уютный ресторан<br>в центре города</h1>
+                <h1>Уютный ресторан в центре города</h1>
 
                 <a href="#reservation" class="hero-btn">
                     Забронировать <span class="arrow">→</span>
@@ -49,11 +49,7 @@
         </div>
 
     </div>
-</header>
-
-
-
-
+    </header>
 
     <!-- ================= MAIN ================= -->
     <main id="main" class="main" itemprop="mainContent">
@@ -90,9 +86,9 @@
              <img src="images/about6.webp" alt="Работа команды">
         </div>
 
-        <button class="gallery-btn next">›</button>
-    </div>
-</section>
+        <button class="gallery-btn next" aria-label="Следующее фото">›</button>
+        </div>
+        </section>
 
 
         <!-- ================= МЕНЮ ================= -->
@@ -123,10 +119,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Салат Цезарь</h3>
-                    <p class="dish-desc">Обжаренная курица, ромейн, томаты, соус цезарь, выдержанный сыр, сухарики из молочного хлеба, панированное яйцо.</p>
+                    <p class="dish-desc" itemprop="description">Обжаренная курица, ромейн, томаты, соус цезарь, выдержанный сыр, сухарики из молочного хлеба, панированное яйцо.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">23 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">23</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -137,10 +135,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Салат Нисуаз</h3>
-                    <p class="dish-desc">Тунец, яйцо, фасоль, оливки, картофель.</p>
+                    <p class="dish-desc" itemprop="description">Тунец, яйцо, фасоль, оливки, картофель.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">26 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">26</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -151,10 +151,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Салат с креветками</h3>
-                    <p class="dish-desc">Обжаренные креветки, ромейн, томаты, выдержанный сыр, микс салатов, цитрусовая заправка.</p>
+                    <p class="dish-desc" itemprop="description">Обжаренные креветки, ромейн, томаты, выдержанный сыр, микс салатов, цитрусовая заправка.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">27 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">27</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
         </section>
 
@@ -170,10 +172,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Томатный суп</h3>
-                    <p class="dish-desc">Томаты, базилик, сливки, чеснок.</p>
+                    <p class="dish-desc" itemprop="description">Томаты, базилик, сливки, чеснок.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">18 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">18</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -184,10 +188,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Луковый с копченым сыром</h3>
-                    <p class="dish-desc">Говяжий бульон, карамелизированный лук, хлебные гренки под шапкой сыра моцарелла.</p>
+                    <p class="dish-desc" itemprop="description">Говяжий бульон, карамелизированный лук, хлебные гренки под шапкой сыра моцарелла.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">21 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">21</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -198,10 +204,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Чаудер с морепродуктами</h3>
-                    <p class="dish-desc">Сливочный рыбный бульон с морепродуктами, чесночное масло, цедра лайма, петрушка</p>
+                    <p class="dish-desc" itemprop="description">Сливочный рыбный бульон с морепродуктами, чесночное масло, цедра лайма, петрушка</p>
                 </div>
 
-                <p class="price"><span itemprop="price">19 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">19</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
         </section>
 
@@ -217,10 +225,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Стейк</h3>
-                    <p class="dish-desc">Говядина, специи, сливочное масло.</p>
+                    <p class="dish-desc" itemprop="description">Говядина, специи, сливочное масло.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">45 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">45</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -231,10 +241,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Ризотто с морским гребешком и цветной капустой</h3>
-                    <p class="dish-desc">Ризотто классико с добавлением бульона биск и пасты из вяленых томатов с морским гребешком и жаренной цветной капустой.</p>
+                    <p class="dish-desc" itemprop="description">Ризотто классико с добавлением бульона биск и пасты из вяленых томатов с морским гребешком и жаренной цветной капустой.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">28 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">28</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -245,10 +257,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Котлеты из щуки с картофельным пюре</h3>
-                    <p class="dish-desc">Котлеты из щуки, картофельное пюре, соус берблан.</p>
+                    <p class="dish-desc" itemprop="description">Котлеты из щуки, картофельное пюре, соус берблан.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">32 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">32</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
         </section>
 
@@ -264,10 +278,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Маргарита</h3>
-                    <p class="dish-desc">Томаты, моцарелла, базилик.</p>
+                    <p class="dish-desc" itemprop="description">Томаты, моцарелла, базилик.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">22 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">22</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -278,10 +294,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Пепперони</h3>
-                    <p class="dish-desc">Пепперони, моцарелла, томатный соус.</p>
+                    <p class="dish-desc" itemprop="description">Пепперони, моцарелла, томатный соус.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">25 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">25</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -292,10 +310,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">4 сыра</h3>
-                    <p class="dish-desc">Моцарелла, дорблю, пармезан, чеддер.</p>
+                    <p class="dish-desc" itemprop="description">Моцарелла, дорблю, пармезан, чеддер.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">27 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">27</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
         </section>
 
@@ -311,10 +331,12 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Тирамису</h3>
-                    <p class="dish-desc">Кофе, маскарпоне, какао.</p>
+                    <p class="dish-desc" itemprop="description">Кофе, маскарпоне, какао.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">18 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">18</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
@@ -325,28 +347,32 @@
 
                 <div class="dish-info">
                     <h3 class="dish-name" itemprop="name">Баскский чизкейк с соусом манго-маракуйя</h3>
-                    <p class="dish-desc">Сливочный сыр, ваниль, печенье.</p>
+                    <p class="dish-desc" itemprop="description">Сливочный сыр, ваниль, печенье.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">19 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">19</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
 
             <article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
                 <figure>
-                    <img src="images/dessert3.webp" alt="Шоколадный фондан с вишней и пломбиром " itemprop="image">
-                    <figcaption class="visually-hidden">Шоколадный фондан с вишней и пломбиром </figcaption>
+                    <img src="images/dessert3.webp" alt="Шоколадный фондан с вишней и пломбиром" itemprop="image">
+                    <figcaption class="visually-hidden">Шоколадный фондан с вишней и пломбиром</figcaption>
                 </figure>
 
                 <div class="dish-info">
-                    <h3 class="dish-name" itemprop="name">Шоколадный фондан с вишней и пломбиром </h3>
-                    <p class="dish-desc">Шоколадный десерт с мороженым, сладкой вишней и шоколадными чипсами.</p>
+                    <h3 class="dish-name" itemprop="name">Шоколадный фондан с вишней и пломбиром</h3>
+                    <p class="dish-desc" itemprop="description">Шоколадный десерт с мороженым, сладкой вишней и шоколадными чипсами.</p>
                 </div>
 
-                <p class="price"><span itemprop="price">21 руб.</span></p>
+                <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <span itemprop="price">21</span> <span itemprop="priceCurrency">BYN</span>
+                </p>
             </article>
         </section>
 
-        <!-- БЛЮДА ОТ ШЕФА -->
+        <!-- БЛЮДА ОТ ШЕФА - ИСПРАВЛЕНО: теперь название и описание разделены -->
         <section class="menu-list" id="chef">
             <h3 class="visually-hidden">Блюда от шефа</h3>
 
@@ -358,19 +384,25 @@
                     <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
                         <figure>
                             <img src="images/chef1.png" alt="Сибас с капонатой по-сицилийски" itemprop="image">
-                            <figcaption class="visually-hidden">Сибас с капонатой по-сицилийскиФирменное блюдо</figcaption>
+                            <figcaption class="visually-hidden">Сибас с капонатой по-сицилийски</figcaption>
                         </figure>
-                        <h4 itemprop="name">Филе сибаса с овощным рагу, салатом из кинзы и базилика и оливками каламата.</h4>
-                        <p class="price"><span itemprop="price">52 руб.</span></p>
+                        <h4 itemprop="name">Филе сибаса с овощным рагу</h4>
+                        <p class="dish-desc" itemprop="description">С овощным рагу, салатом из кинзы и базилика и оливками каламата.</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">52</span> <span itemprop="priceCurrency">BYN</span>
+                        </p>
                     </article>
 
                     <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
                         <figure>
-                            <img src="images/chef2.webp" alt="Лосось с тропической пеной и кремом из тыквы " itemprop="image">
-                            <figcaption class="visually-hidden">Лосось с тропической пеной и кремом из тыквы </figcaption>
+                            <img src="images/chef2.webp" alt="Лосось с тропической пеной и кремом из тыквы" itemprop="image">
+                            <figcaption class="visually-hidden">Лосось с тропической пеной и кремом из тыквы</figcaption>
                         </figure>
-                        <h4 itemprop="name">Лосось, пюре из тыквы с кокосовым молоком и терияки, пена на основе манго, маракуйи и кинзы, пудра из свеклы.</h4>
-                        <p class="price"><span itemprop="price">64 руб.</span></p>
+                        <h4 itemprop="name">Лосось с тропической пеной</h4>
+                        <p class="dish-desc" itemprop="description">Пюре из тыквы с кокосовым молоком и терияки, пена на основе манго, маракуйи и кинзы, пудра из свеклы.</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">64</span> <span itemprop="priceCurrency">BYN</span>
+                        </p>
                     </article>
 
                     <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
@@ -378,8 +410,11 @@
                             <img src="images/chef3.webp" alt="Утиная грудка с трюфельной перловкой и печеным яблоком" itemprop="image">
                             <figcaption class="visually-hidden">Утиная грудка с трюфельной перловкой и печеным яблоком</figcaption>
                         </figure>
-                        <h4 itemprop="name">Утиная грудка медум ре, трюфельная перловая каша, печеное целое яблоко с грецким орехом, медом и мускатным орехом.</h4>
-                        <p class="price"><span itemprop="price">48 руб.</span></p>
+                        <h4 itemprop="name">Утиная грудка медум ре</h4>
+                        <p class="dish-desc" itemprop="description">Трюфельная перловая каша, печеное целое яблоко с грецким орехом, медом и мускатным орехом.</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">48</span> <span itemprop="priceCurrency">BYN</span>
+                        </p>
                     </article>
 
                     <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
@@ -387,8 +422,11 @@
                             <img src="images/chef4.jpg" alt="Филе-миньон с винным соусом и пряным бататом" itemprop="image">
                             <figcaption class="visually-hidden">Филе-миньон с винным соусом и пряным бататом</figcaption>
                         </figure>
-                        <h4 itemprop="name">Филе-миньон с винным соусом и пряным бататом</h4>
-                        <p class="price"><span itemprop="price">58 руб.</span></p>
+                        <h4 itemprop="name">Филе-миньон</h4>
+                        <p class="dish-desc" itemprop="description">С винным соусом и пряным бататом.</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">58</span> <span itemprop="priceCurrency">BYN</span>
+                        </p>
                     </article>
 
                     <article class="chef-card" itemscope itemtype="https://schema.org/MenuItem">
@@ -396,8 +434,11 @@
                             <img src="images/chef5.webp" alt="Тальятелле с копченой индейкой и вешенками" itemprop="image">
                             <figcaption class="visually-hidden">Тальятелле с копченой индейкой и вешенками</figcaption>
                         </figure>
-                        <h4 itemprop="name">Домашняя паста с копченой индейкой и хрустящими вешенками в терияки соусе. </h4>
-                        <p class="price"><span itemprop="price">62 руб.</span></p>
+                        <h4 itemprop="name">Тальятелле с копченой индейкой</h4>
+                        <p class="dish-desc" itemprop="description">Домашняя паста с хрустящими вешенками в терияки соусе.</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">62</span> <span itemprop="priceCurrency">BYN</span>
+                        </p>
                     </article>
 
                 </div>
@@ -411,41 +452,41 @@
 
 
         <!-- ================= ASIDE ================= -->
-        <aside id="reservation" class="sidebar">
+<aside id="reservation" class="sidebar">
 
             <div class="reservation-widget">
                 <h2>Быстрое бронирование</h2>
                 <form class="reservation-form">
-    <label>Дата:
-        <input type="date" name="date">
-    </label>
+                <label>Дата:
+                <input type="date" name="date">
+                </label>
 
-    <label>Время:
-        <input type="time" name="time">
-    </label>
+                <label>Время:
+                <input type="time" name="time">
+                </label>
 
-    <label>Гостей:
-        <select name="guests">
-            <option value="">—</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4+</option>
-        </select>
-    </label>
+                <label>Гостей:
+                <select name="guests">
+                <option value="">—</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4 и более</option>
+                </select>
+                </label>
 
-    <label>Телефон:
-        <input type="tel" name="phone" placeholder="Введите номер телефона для связи">
-    </label>
+                <label>Телефон:
+                <input type="tel" name="phone" placeholder="Введите номер телефона для связи">
+                </label>
 
-    <label>Пожелания:
-        <textarea name="comment" rows="3" placeholder="Ваши пожелания (необязательно)"></textarea>
-    </label>
+                <label>Пожелания:
+                <textarea name="comment" rows="3" placeholder="Ваши пожелания (необязательно)"></textarea>
+                </label>
 
-    <button class="btn btn-primary">Отправить заявку</button>
-</form>
+                <button class="btn btn-primary">Отправить заявку</button>
+                </form>
 
- </div>
+            </div>
 
             <div class="aside-block promo">
                 <h3>Акции и спецпредложения</h3>
@@ -465,56 +506,81 @@
                 </p>
             </div>
 
-        </aside>
+</aside>
 
-        <!-- ================= ОТЗЫВЫ ================= -->
-        <section id="reviews" class="reviews">
-            <h2>Отзывы гостей</h2>
+       
+<!-- ================= ОТЗЫВЫ ================= -->
+<section id="reviews" class="reviews" itemscope itemtype="https://schema.org/ItemList">
+    <h2 itemprop="name">Отзывы гостей</h2>
+    <meta itemprop="numberOfItems" content="2">
 
-            <article class="review">
-    <div class="review-header">
-        <img src="images/avatar1.webp" alt="Аватар пользователя" class="review-avatar">
+ 
+    <article class="review" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
+       
+        <meta itemprop="itemReviewed" itemscope itemtype="https://schema.org/Restaurant" itemid="#restaurant">
 
-        <div class="review-user">
-            <h3 class="review-name">Александра</h3>
-            <div class="review-stars">★★★★★</div>
+        <div class="review-header">
+            <img src="images/avatar1.webp" alt="Аватар пользователя" class="review-avatar">
+            
+            <div class="review-user">
+                <h3 class="review-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Александра</span>
+                </h3>
+                
+                <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <span>★★★★★</span>
+                    <meta itemprop="ratingValue" content="5">
+                </div>
+            </div>
         </div>
-    </div>
 
-    <p class="review-text">
-        Восхитительное место! Блюда очень вкусные, обслуживание на высоте. Атмосфера уютная, хочется возвращаться снова и снова.
-    </p>
+        <p class="review-text" itemprop="reviewBody">
+            Восхитительное место! Блюда очень вкусные, обслуживание на высоте. Атмосфера уютная, хочется возвращаться снова и снова.
+        </p>
 
-    <div class="review-photos">
-        <img src="images/rev1-1.webp" alt="Фото блюда">
-        <img src="images/rev1-2.webp" alt="Фото блюда">
-    </div>
-</article>
+        <meta itemprop="datePublished" content="2026-02-15">
 
-
-<article class="review">
-    <div class="review-header">
-        <img src="images/avatar2.webp" alt="Аватар пользователя" class="review-avatar">
-
-        <div class="review-user">
-            <h3 class="review-name">Артём</h3>
-            <div class="review-stars">★★★★★</div>
+        <div class="review-photos">
+            <img src="images/rev1-1.webp" alt="Фото блюда">
+            <img src="images/rev1-2.webp" alt="Фото блюда">
         </div>
-    </div>
+    </article>
 
-    <p class="review-text">
-        Отличное место для семейного ужина. Особенно понравились мидии и стейк — всё очень вкусно и красиво подано. Спасибо персоналу за внимание!
-    </p>
+    <!-- ОТЗЫВ 2: Артём -->
+    <article class="review" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
+        <meta itemprop="itemReviewed" itemscope itemtype="https://schema.org/Restaurant" itemid="#restaurant">
 
-    <div class="review-photos">
-        <img src="images/rev2-1.webp" alt="Фото блюда">
-        <img src="images/rev2-2.webp" alt="Фото блюда">
-    </div>
-</article>
+        <div class="review-header">
+            <img src="images/avatar2.webp" alt="Аватар пользователя" class="review-avatar">
+            
+            <div class="review-user">
+                <h3 class="review-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Артём</span>
+                </h3>
+                
+                <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <span>★★★★★</span>
+                    <meta itemprop="ratingValue" content="5">
+                </div>
+            </div>
+        </div>
 
+        <p class="review-text" itemprop="reviewBody">
+            Отличное место для семейного ужина. Особенно понравились мидии и стейк — всё очень вкусно и красиво подано. Спасибо персоналу за внимание!
+        </p>
 
-        </section>
+        <meta itemprop="datePublished" content="2026-02-10">
 
+        <div class="review-photos">
+            <img src="images/rev2-1.webp" alt="Фото блюда">
+            <img src="images/rev2-2.webp" alt="Фото блюда">
+        </div>
+    </article>
+
+   
+
+   
+</section>
     </main>
 
     <!-- ================= FOOTER ================= -->
