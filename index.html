@@ -10,7 +10,7 @@
 
 <body itemscope itemtype="https://schema.org/Restaurant">
 
-    <!-- Обязательные свойства Schema.org -->
+  
     <meta itemprop="name" content="GourmetResto">
     <meta itemprop="servesCuisine" content="Европейская кухня">
     <meta itemprop="priceRange" content="$$">
@@ -510,35 +510,26 @@
 
        
 <!-- ================= ОТЗЫВЫ ================= -->
-<section id="reviews" class="reviews" itemscope itemtype="https://schema.org/ItemList">
-    <h2 itemprop="name">Отзывы гостей</h2>
-    <meta itemprop="numberOfItems" content="2">
+<section id="reviews" class="reviews">
+    <h2>Отзывы гостей</h2>
 
- 
-    <article class="review" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
-       
-        <meta itemprop="itemReviewed" itemscope itemtype="https://schema.org/Restaurant" itemid="#restaurant">
-
+    <!-- ОТЗЫВ 1 -->
+    <article class="review">
         <div class="review-header">
             <img src="images/avatar1.webp" alt="Аватар пользователя" class="review-avatar">
             
             <div class="review-user">
-                <h3 class="review-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <span itemprop="name">Александра</span>
-                </h3>
+                <h3 class="review-name">Александра</h3>
                 
-                <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                <div class="review-stars">
                     <span>★★★★★</span>
-                    <meta itemprop="ratingValue" content="5">
                 </div>
             </div>
         </div>
 
-        <p class="review-text" itemprop="reviewBody">
+        <p class="review-text">
             Восхитительное место! Блюда очень вкусные, обслуживание на высоте. Атмосфера уютная, хочется возвращаться снова и снова.
         </p>
-
-        <meta itemprop="datePublished" content="2026-02-15">
 
         <div class="review-photos">
             <img src="images/rev1-1.webp" alt="Фото блюда">
@@ -546,30 +537,23 @@
         </div>
     </article>
 
-    <!-- ОТЗЫВ 2: Артём -->
-    <article class="review" itemscope itemtype="https://schema.org/Review" itemprop="itemListElement">
-        <meta itemprop="itemReviewed" itemscope itemtype="https://schema.org/Restaurant" itemid="#restaurant">
-
+    <!-- ОТЗЫВ 2 -->
+    <article class="review">
         <div class="review-header">
             <img src="images/avatar2.webp" alt="Аватар пользователя" class="review-avatar">
             
             <div class="review-user">
-                <h3 class="review-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <span itemprop="name">Артём</span>
-                </h3>
+                <h3 class="review-name">Артём</h3>
                 
-                <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                <div class="review-stars">
                     <span>★★★★★</span>
-                    <meta itemprop="ratingValue" content="5">
                 </div>
             </div>
         </div>
 
-        <p class="review-text" itemprop="reviewBody">
+        <p class="review-text">
             Отличное место для семейного ужина. Особенно понравились мидии и стейк — всё очень вкусно и красиво подано. Спасибо персоналу за внимание!
         </p>
-
-        <meta itemprop="datePublished" content="2026-02-10">
 
         <div class="review-photos">
             <img src="images/rev2-1.webp" alt="Фото блюда">
@@ -577,20 +561,19 @@
         </div>
     </article>
 
-   
-
-   
 </section>
+
+
     </main>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
     <div class="container">
 
-        <!-- Адрес -->
+      
         <p class="footer-address">г. Минск, пл. Свободы, 5</p>
 
-        <!-- Телефон + почта -->
+    
         <div class="footer-contacts-row">
 
             <div class="footer-contact">
@@ -609,13 +592,12 @@
 
         </div>
 
-        <!-- Линия -->
         <div class="footer-line"></div>
 
-        <!-- Копирайт -->
+    
         <p class="footer-copy">© 2026 GourmetResto</p>
 
-        <!-- Карта -->
+       
         <div class="footer-map">
     <iframe 
         src="https://yandex.by/map-widget/v1/?ll=27.553620%2C53.902240&z=17&l=map&pt=27.553620,53.902240,pm2rdm"

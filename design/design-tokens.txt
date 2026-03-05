@@ -1,0 +1,43 @@
+# design-tokens.txt
+
+## Цвета
+- Charcoal Dark (фон): #1A1A1A
+- Warm Gold (акцент): #C6A43F
+- White (текст): #FFFFFF
+- Light Gray (второстепенный): #B3B3B3
+
+## Шрифты
+
+### Заголовки (The Art of Dining)
+- Шрифт: Playfair Display / Cormorant Garamond (Serif)
+- Начертание: Bold (700)
+- Размер: 48px (заголовок), 36px (подзаголовки)
+- Цвет: White / Warm Gold
+
+### Основной текст
+- Шрифт: Montserrat / Open Sans (Sans-Serif)
+- Начертание: Light (300) / Regular (400)
+- Размер: 16-18px
+- Цвет: White / Light Gray
+
+### Цитата 
+- Шрифт: Playfair Display / Cormorant Garamond (Serif)
+- Начертание: Light Italic (300)
+- Размер: 20-24px
+- Цвет: Warm Gold
+
+### Навигация (меню)
+- Шрифт: Montserrat / Open Sans
+- Начертание: Regular (400)
+- Размер: 14-16px
+- Межбуквенный интервал: 0.5-1px (ALL CAPS опционально)
+- Цвет: White (hover: Warm Gold)
+
+## Эффекты
+- Тени: мягкие, глубокие (box-shadow)
+- Текстура: тонкий шум поверх фона (опционально)
+- Hover: золотое подчеркивание / изменение цвета
+
+## Иконки
+- Стиль: линейные (outline), толщина 1-2px
+- Цвет: Warm Gold / White
