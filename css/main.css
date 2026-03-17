@@ -1,0 +1,707 @@
+/* =========================================
+   ABOUT — О РЕСТОРАНЕ
+========================================= */
+
+.about {
+    max-width: 1100px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-sm);
+    scroll-margin-top: var(--space-lg);
+}
+
+.about__title {
+    font-family: var(--font-title);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.about__lead {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-light);
+    margin-bottom: var(--space-sm);
+}
+
+.about__paragraph {
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-muted);
+}
+
+/* Галерея */
+
+.about__gallery {
+    position: relative;
+    margin-top: var(--space-lg);
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.about__gallery-track {
+    display: flex;
+    gap: 24px;
+    transition: transform var(--transition-base);
+}
+
+.about__gallery-img {
+    width: 550px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-base);
+}
+
+.about__gallery-img:hover {
+    transform: scale(1.02);
+}
+
+.about__gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-size: 32px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    z-index: 3;
+    backdrop-filter: blur(4px);
+    transition: all var(--transition-base);
+}
+
+.about__gallery-btn:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: translateY(-50%) scale(1.1);
+    border-color: var(--color-accent);
+}
+
+.about__gallery-btn--prev { left: 20px; }
+.about__gallery-btn--next { right: 20px; }
+
+/* =========================================
+   MENU — МЕНЮ
+========================================= */
+
+.menu {
+    max-width: 1100px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-sm);
+    scroll-margin-top: var(--space-lg);
+}
+
+.menu__title {
+    font-family: var(--font-title);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+/* Категории */
+
+.menu__categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.menu__category {
+    cursor: pointer;
+    color: var(--color-text-muted);
+    font-size: var(--fs-lg);
+    padding-bottom: 6px;
+    transition: color var(--transition-base), border var(--transition-base);
+    position: relative;
+}
+
+.menu__category::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width var(--transition-base);
+}
+
+.menu__category:hover {
+    color: var(--color-accent);
+}
+
+.menu__category:hover::after {
+    width: 100%;
+}
+
+.menu__category--active {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.menu__category--active::after {
+    display: none;
+}
+
+/* Списки */
+
+.menu__list {
+    display: none;
+}
+
+.menu__list--active {
+    display: block;
+}
+
+/* =========================================
+   MENU-ITEM — КАРТОЧКА БЛЮДА
+========================================= */
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 180px 1fr auto;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: var(--space-xs);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+}
+
+.menu-item:hover {
+    background: var(--color-bg-alt);
+    transform: translateX(8px);
+    box-shadow: var(--shadow-soft);
+}
+
+.menu-item__figure {
+    width: 180px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.menu-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.menu-item:hover .menu-item__img {
+    transform: scale(1.1);
+}
+
+.menu-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-item__name {
+    font-size: 22px;
+    font-weight: var(--fw-medium);
+    color: var(--color-white);
+    transition: color var(--transition-base);
+}
+
+.menu-item:hover .menu-item__name {
+    color: var(--color-accent);
+}
+
+.menu-item__desc {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+}
+
+.menu-item__price {
+    font-size: 20px;
+    font-weight: var(--fw-medium);
+    color: var(--color-accent);
+    transition: transform var(--transition-base);
+}
+
+.menu-item:hover .menu-item__price {
+    transform: scale(1.1);
+}
+
+/* =========================================
+   CHEF — КАРУСЕЛЬ БЛЮД ОТ ШЕФА
+========================================= */
+
+.chef {
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--space-sm);
+    padding: 0 40px;
+}
+
+.chef__track {
+    display: flex;
+    gap: 20px;
+    transition: transform var(--transition-base);
+}
+
+.chef__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-size: 32px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    z-index: 3;
+    backdrop-filter: blur(4px);
+    transition: all var(--transition-base);
+}
+
+.chef__btn:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: translateY(-50%) scale(1.1);
+    border-color: var(--color-accent);
+}
+
+.chef__btn--prev { left: 0; }
+.chef__btn--next { right: 0; }
+
+/* Карточка шефа */
+
+.chef-card {
+    min-width: 260px;
+    background: var(--color-bg-alt);
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+}
+
+.chef-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+    border-color: var(--color-accent);
+    background: var(--color-surface);
+}
+
+.chef-card__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    transition: transform var(--transition-base);
+}
+
+.chef-card:hover .chef-card__img {
+    transform: scale(1.05);
+}
+
+.chef-card__name {
+    margin-top: 12px;
+    font-size: var(--fs-lg);
+    transition: color var(--transition-base);
+}
+
+.chef-card:hover .chef-card__name {
+    color: var(--color-accent);
+}
+
+.chef-card__desc {
+    color: var(--color-text-muted);
+    margin-top: var(--space-xs);
+    font-size: var(--fs-sm);
+}
+
+.chef-card__price {
+    margin-top: var(--space-xs);
+    font-size: var(--fs-md);
+    color: var(--color-accent);
+    font-weight: var(--fw-medium);
+}
+
+/* =========================================
+   SIDEBAR — БОКОВАЯ КОЛОНКА
+========================================= */
+
+.sidebar {
+    max-width: 1100px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-sm);
+}
+
+.sidebar__reservation-widget {
+    background: var(--color-bg-alt);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-lg);
+    transition: transform var(--transition-base);
+}
+
+.sidebar__reservation-widget:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.sidebar__title {
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-title);
+    font-size: var(--fs-lg);
+}
+
+/* =========================================
+   RESERVATION-FORM — ФОРМА БРОНИ
+========================================= */
+
+.reservation-form__label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--color-text-muted);
+    font-size: var(--fs-sm);
+}
+
+.reservation-form__input,
+.reservation-form__select,
+.reservation-form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: var(--radius-sm);
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid transparent;
+    transition: all var(--transition-base);
+}
+
+.reservation-form__input:focus,
+.reservation-form__select:focus,
+.reservation-form__textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(201, 109, 56, 0.2);
+}
+
+.reservation-form__btn {
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.reservation-form__btn:hover {
+    background: var(--color-accent-hover);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+}
+
+/* =========================================
+   PROMO — АКЦИИ
+========================================= */
+
+.promo {
+    background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-surface) 100%);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-accent);
+    transition: all var(--transition-base);
+}
+
+.promo:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.promo__title {
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-title);
+    font-size: var(--fs-lg);
+    color: var(--color-accent);
+}
+
+.promo__text {
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+/* =========================================
+   REVIEWS — ОТЗЫВЫ (с Grid)
+========================================= */
+
+.reviews {
+    max-width: 1100px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-sm);
+    scroll-margin-top: var(--space-lg);
+}
+
+.reviews__title {
+    font-family: var(--font-title);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+/* Grid для отзывов */
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.review {
+    background: var(--color-bg-alt);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    border: 1px solid transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+    border-color: var(--color-accent);
+    background: var(--color-surface);
+}
+
+.review__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.review__avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-accent);
+    transition: transform var(--transition-base);
+}
+
+.review:hover .review__avatar {
+    transform: scale(1.1);
+}
+
+.review__name {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-medium);
+}
+
+.review__stars {
+    color: var(--color-accent);
+    font-size: var(--fs-md);
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+.review__stars::before {
+    content: "☆☆☆☆☆";
+    color: var(--color-text-muted);
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.review__stars::after {
+    content: "★★★★★";
+    position: relative;
+    display: inline-block;
+    color: var(--color-accent);
+}
+
+/* Рейтинг 4 из 5 */
+.review__stars--4::after {
+    clip-path: inset(0 20% 0 0); /* Обрезает 20% справа */
+}
+
+/* Рейтинг 5 из 5 */
+.review__stars--5::after {
+    clip-path: inset(0 0 0 0);
+}
+
+/* Рейтинг 3 из 5 */
+.review__stars--3::after {
+    clip-path: inset(0 40% 0 0);
+}
+
+.review__text {
+    margin-bottom: 14px;
+    color: var(--color-text);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.review__photos {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.review__photo {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.review__photo:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Адаптивность Grid */
+@media (max-width: 992px) {
+    .reviews__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   АДАПТИВ
+========================================= */
+
+@media (max-width: 1024px) {
+    .menu-item {
+        grid-template-columns: 140px 1fr auto;
+        gap: 15px;
+    }
+    
+    .about__gallery-img {
+        width: 450px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-item {
+        grid-template-columns: 140px 1fr auto;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .menu-item:hover {
+        transform: translateY(-4px);
+    }
+    
+    .menu-item__figure {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    
+    .menu-item__info {
+        text-align: center;
+    }
+    
+    .about__gallery-img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .about__gallery-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .chef {
+        padding: 0 30px;
+    }
+    
+    .chef__btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .review__photos {
+        justify-content: center;
+    }
+    
+    .review__photo {
+        width: 100px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu__categories {
+        gap: 16px;
+    }
+    
+    .menu__category {
+        font-size: var(--fs-base);
+    }
+    
+    .about__gallery-img {
+        height: 300px;
+    }
+    
+    .about__gallery-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .about__gallery-btn--prev { left: 10px; }
+    .about__gallery-btn--next { right: 10px; }
+    
+    .chef {
+        padding: 0 20px;
+    }
+    
+    .chef-card {
+        min-width: 220px;
+    }
+    
+    .review__header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .review__photos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review__photo {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+    }
+}
