@@ -1,6 +1,4 @@
-/* =========================================
-   FOOTER — ПОДВАЛ
-========================================= */
+
 
 .footer {
     background: var(--color-bg-alt);
@@ -13,7 +11,7 @@
     margin: 0 auto;
 }
 
-/* Grid для верхней части футера */
+
 .footer__grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -21,7 +19,7 @@
     margin-bottom: var(--space-xl);
 }
 
-/* Колонки */
+
 .footer__col {
     display: flex;
     flex-direction: column;
@@ -47,7 +45,7 @@
     background: var(--color-accent);
 }
 
-/* Первая колонка - контакты */
+
 .footer__address {
     font-size: var(--fs-lg);
     color: var(--color-white);
@@ -85,7 +83,7 @@
     color: var(--color-accent);
 }
 
-/* Вторая колонка - часы работы */
+
 .footer__hours-item {
     display: flex;
     gap: var(--space-sm);
@@ -103,7 +101,7 @@
     font-size: var(--fs-sm);
 }
 
-/* Третья колонка - навигация */
+
 .footer__nav {
     display: flex;
     flex-direction: column;
@@ -122,7 +120,7 @@
     transform: translateX(4px);
 }
 
-/* Разделительная линия */
+
 .footer__line {
     width: 100%;
     height: 1px;
@@ -131,7 +129,7 @@
     opacity: 0.3;
 }
 
-/* Нижняя часть футера */
+
 .footer__bottom {
     display: flex;
     justify-content: space-between;
@@ -141,13 +139,13 @@
     margin-bottom: var(--space-md);
 }
 
-/* Копирайт */
+
 .footer__copy {
     font-size: var(--fs-sm);
     color: var(--color-text-muted);
 }
 
-/* Карта */
+
 .footer__map {
     border-radius: var(--radius-md);
     overflow: hidden;
@@ -167,9 +165,7 @@
     display: block;
 }
 
-/* =========================================
-   АДАПТИВ
-========================================= */
+
 
 @media (max-width: 992px) {
     .footer__grid {

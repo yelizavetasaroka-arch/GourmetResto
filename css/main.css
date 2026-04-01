@@ -1,6 +1,3 @@
-/* =========================================
-   ABOUT — О РЕСТОРАНЕ
-========================================= */
 
 .about {
     max-width: 1100px;
@@ -26,7 +23,6 @@
     color: var(--color-text-muted);
 }
 
-/* Галерея */
 
 .about__gallery {
     position: relative;
@@ -83,9 +79,9 @@
 .about__gallery-btn--prev { left: 20px; }
 .about__gallery-btn--next { right: 20px; }
 
-/* =========================================
-   MENU — МЕНЮ
-========================================= */
+
+
+
 
 .menu {
     max-width: 1100px;
@@ -100,7 +96,7 @@
     margin-bottom: var(--space-sm);
 }
 
-/* Категории */
+
 
 .menu__categories {
     display: flex;
@@ -147,7 +143,7 @@
     display: none;
 }
 
-/* Списки */
+
 
 .menu__list {
     display: none;
@@ -157,9 +153,6 @@
     display: block;
 }
 
-/* =========================================
-   MENU-ITEM — КАРТОЧКА БЛЮДА
-========================================= */
 
 .menu-item {
     display: grid;
@@ -230,9 +223,7 @@
     transform: scale(1.1);
 }
 
-/* =========================================
-   CHEF — КАРУСЕЛЬ БЛЮД ОТ ШЕФА
-========================================= */
+
 
 .chef {
     position: relative;
@@ -277,7 +268,6 @@
 .chef__btn--prev { left: 0; }
 .chef__btn--next { right: 0; }
 
-/* Карточка шефа */
 
 .chef-card {
     min-width: 260px;
@@ -330,9 +320,6 @@
     font-weight: var(--fw-medium);
 }
 
-/* =========================================
-   SIDEBAR — БОКОВАЯ КОЛОНКА
-========================================= */
 
 .sidebar {
     max-width: 1100px;
@@ -359,9 +346,7 @@
     font-size: var(--fs-lg);
 }
 
-/* =========================================
-   RESERVATION-FORM — ФОРМА БРОНИ
-========================================= */
+
 
 .reservation-form__label {
     display: block;
@@ -405,16 +390,56 @@
     box-shadow: var(--shadow-strong);
 }
 
-/* =========================================
-   PROMO — АКЦИИ
-========================================= */
 
+
+/* Контейнер */
+.promo-section {
+    max-width: 800px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-md);
+}
+
+.promo-section__title {
+    font-family: var(--font-title);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* Кнопка добавления */
+.promo-add-btn {
+    display: block;
+    margin: 0 auto var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.promo-add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+}
+
+/* Список */
+.promo-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* Карточка акции */
 .promo {
-    background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-surface) 100%);
+    background: linear-gradient(135deg, var(--color-bg-alt), var(--color-surface));
     padding: var(--space-md);
     border-radius: var(--radius-md);
     border-left: 4px solid var(--color-accent);
-    transition: all var(--transition-base);
+    transition: var(--transition-base);
+    position: relative;
 }
 
 .promo:hover {
@@ -422,44 +447,190 @@
     box-shadow: var(--shadow-soft);
 }
 
-.promo__title {
-    margin-bottom: var(--space-sm);
-    font-family: var(--font-title);
-    font-size: var(--fs-lg);
-    color: var(--color-accent);
-}
-
 .promo__text {
-    margin-bottom: var(--space-xs);
     color: var(--color-text-muted);
     line-height: 1.5;
 }
 
-/* =========================================
-   REVIEWS — ОТЗЫВЫ (с Grid)
-========================================= */
+/* Кнопки действий */
+.promo__actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
 
+.promo__btn {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform var(--transition-base);
+}
+
+.promo__btn:hover {
+    transform: scale(1.2);
+}
+
+/* Модальное окно */
+.promo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.promo-modal__content {
+    background: var(--color-bg-alt);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 500px;
+    border-left: 4px solid var(--color-accent);
+}
+
+.promo-modal__title {
+    margin-bottom: var(--space-md);
+    font-family: var(--font-title);
+    color: var(--color-accent);
+}
+
+.promo-modal__input {
+    width: 100%;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+}
+
+.promo-modal__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+}
+
+
+
+
+
+
+
+/* ========== REVIEWS SECTION ========== */
 .reviews {
-    max-width: 1100px;
-    margin: var(--space-xl) auto;
-    padding: 0 var(--space-sm);
-    scroll-margin-top: var(--space-lg);
+    padding: var(--space-xl) 0;
+    background: var(--color-bg);
 }
 
 .reviews__title {
     font-family: var(--font-title);
     font-size: var(--fs-xl);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    text-align: center;
 }
 
-/* Grid для отзывов */
-.reviews__grid {
+/* ========== SEARCH ========== */
+.reviews__search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+}
+
+.reviews__search {
+    width: 100%;
+    max-width: 400px;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-pill);
+    background: var(--color-bg-alt);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-size: var(--fs-base);
+    transition: all var(--transition-base);
+}
+
+.reviews__search:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(213, 142, 42, 0.2);
+}
+
+.reviews__search::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* ========== SLIDER ========== */
+.reviews__slider {
+    position: relative;
+    margin: var(--space-lg) 0;
+    padding: 0 50px;
+}
+.reviews__slider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.reviews__track-container {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.reviews__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.reviews__track {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
-    margin-top: var(--space-lg);
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - 12px); /* две карточки в ряд */
+    gap: 24px;
+    transition: transform 0.3s ease;
 }
 
+
+.reviews__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    font-size: 32px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    z-index: 3;
+    backdrop-filter: blur(4px);
+    transition: all var(--transition-base);
+}
+
+.reviews__btn:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: translateY(-50%) scale(1.1);
+    border-color: var(--color-accent);
+}
+
+.reviews__btn--prev {
+    left: 0;
+}
+
+.reviews__btn--next {
+    right: 0;
+}
+
+/* ========== REVIEW CARD ========== */
 .review {
     background: var(--color-bg-alt);
     padding: var(--space-md);
@@ -469,6 +640,9 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    min-width: auto;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .review:hover {
@@ -501,45 +675,7 @@
 .review__name {
     font-size: var(--fs-lg);
     font-weight: var(--fw-medium);
-}
-
-.review__stars {
-    color: var(--color-accent);
-    font-size: var(--fs-md);
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
-}
-.review__stars::before {
-    content: "☆☆☆☆☆";
-    color: var(--color-text-muted);
-    opacity: 0.3;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-.review__stars::after {
-    content: "★★★★★";
-    position: relative;
-    display: inline-block;
-    color: var(--color-accent);
-}
-
-/* Рейтинг 4 из 5 */
-.review__stars--4::after {
-    clip-path: inset(0 20% 0 0); /* Обрезает 20% справа */
-}
-
-/* Рейтинг 5 из 5 */
-.review__stars--5::after {
-    clip-path: inset(0 0 0 0);
-}
-
-/* Рейтинг 3 из 5 */
-.review__stars--3::after {
-    clip-path: inset(0 40% 0 0);
+    color: var(--color-white);
 }
 
 .review__text {
@@ -547,6 +683,13 @@
     color: var(--color-text);
     line-height: 1.6;
     flex-grow: 1;
+}
+
+.review__date {
+    font-size: var(--fs-xs);
+    color: var(--color-text-muted);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xs);
 }
 
 .review__photos {
@@ -570,22 +713,143 @@
     box-shadow: var(--shadow-soft);
 }
 
-/* Адаптивность Grid */
-@media (max-width: 992px) {
-    .reviews__grid {
-        grid-template-columns: repeat(2, 1fr);
+.review__actions {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+    justify-content: flex-end;
+}
+
+/* ========== STARS RATING (PURE CSS) ========== */
+.review__stars {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+}
+
+/* Пустые звезды (серые) - подложка */
+.review__stars::before {
+    content: "☆☆☆☆☆";
+    color: var(--color-text-muted);
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Золотые звезды (поверх) */
+.review__stars::after {
+    content: "★★★★★";
+    position: relative;
+    display: inline-block;
+    color: var(--color-accent);
+}
+
+/* Рейтинг через clip-path */
+.review__stars--5::after {
+    clip-path: inset(0 0 0 0);
+}
+
+.review__stars--4::after {
+    clip-path: inset(0 20% 0 0);
+}
+
+.review__stars--3::after {
+    clip-path: inset(0 40% 0 0);
+}
+
+.review__stars--2::after {
+    clip-path: inset(0 60% 0 0);
+}
+
+.review__stars--1::after {
+    clip-path: inset(0 80% 0 0);
+}
+
+
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .reviews__slider {
+        padding: 0 40px;
+    }
+    
+    .reviews__btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .review {
+        min-width: 280px;
+    }
+    
+    .review__photos {
+        justify-content: center;
+    }
+    
+    .review__photo {
+        width: 100px;
+        height: 75px;
+    }
+    
+    .add-review {
+        padding: var(--space-md);
     }
 }
 
-@media (max-width: 576px) {
-    .reviews__grid {
-        grid-template-columns: 1fr;
+@media (max-width: 480px) {
+    .reviews__slider {
+        padding: 0 30px;
+    }
+    
+    .reviews__btn {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .reviews__btn--prev {
+        left: 0;
+    }
+    
+    .reviews__btn--next {
+        right: 0;
+    }
+    
+    .review {
+        min-width: 260px;
+    }
+    
+    .review__header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .review__photos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review__photo {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+    }
+    
+    .add-review__submit {
+        width: 100%;
+        align-self: stretch;
     }
 }
 
-/* =========================================
-   АДАПТИВ
-========================================= */
+
+
+
 
 @media (max-width: 1024px) {
     .menu-item {

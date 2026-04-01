@@ -1,66 +1,56 @@
 :root {
-  /* ===========================
-     🎨 Цветовая палитра
-     =========================== */
 
-  /* Основные */
   --color-bg: #0d0d0d;
   --color-bg-alt: #1a1a1a;
   --color-surface: #141414;
 
-  /* Текст */
+  
   --color-text: #e6e6e6;
   --color-text-muted: #bbbbbb;
   --color-white: #ffffff;
   --color-black: #000000;
 
-  /* Акцент — новый цвет C96D38 */
+ 
   --color-accent: #d58e2a;
-  --color-accent-hover: #e7b250; /* Светлее на 10% */
-  --color-accent-light: #eec772; /* Еще светлее */
+  --color-accent-hover: #e7b250; 
+  --color-accent-light: #eec772; 
 
-  /* Прозрачности */
+
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-topbar: rgba(43, 41, 41, 0.45);
   --color-glass: rgba(255, 255, 255, 0.12);
 
-  /* ===========================
-     ✒️ Типографика
-     =========================== */
+
 
   --font-main: "Inter", sans-serif;
   --font-title: "Playfair Display", serif;
 
-  /* Размеры шрифтов */
-  --fs-xs: 0.75rem;   /* 12px */
-  --fs-sm: 0.875rem;  /* 14px */
-  --fs-base: 1rem;    /* 16px */
-  --fs-md: 1.125rem;  /* 18px */
-  --fs-lg: 1.25rem;   /* 20px */
-  --fs-xl: 2rem;      /* 32px */
-  --fs-xxl: 3rem;     /* 48px */
 
-  /* Толщина */
+  --fs-xs: 0.75rem;   
+  --fs-sm: 0.875rem;  
+  --fs-base: 1rem;    
+  --fs-md: 1.125rem;  
+  --fs-lg: 1.25rem;   
+  --fs-xl: 2rem;     
+  --fs-xxl: 3rem;     
+
+
   --fw-light: 300;
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-bold: 600;
 
-  /* ===========================
-     📏 Отступы
-     =========================== */
 
-  --space-xxs: 0.25rem; /* 4px */
-  --space-xs: 0.5rem;   /* 8px */
-  --space-sm: 1rem;     /* 16px */
-  --space-md: 1.5rem;   /* 24px */
-  --space-lg: 2rem;     /* 32px */
-  --space-xl: 3rem;     /* 48px */
-  --space-xxl: 4rem;    /* 64px */
 
-  /* ===========================
-     🟦 Радиусы
-     =========================== */
+  --space-xxs: 0.25rem; 
+  --space-xs: 0.5rem;   
+  --space-sm: 1rem;     
+  --space-md: 1.5rem;   
+  --space-lg: 2rem;     
+  --space-xl: 3rem;    
+  --space-xxl: 4rem;    
+
+  
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -68,16 +58,12 @@
   --radius-xl: 20px;
   --radius-pill: 999px;
 
-  /* ===========================
-     🧱 Тени
-     =========================== */
+
 
   --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.25);
   --shadow-strong: 0 6px 20px rgba(0, 0, 0, 0.35);
 
-  /* ===========================
-     📱 Breakpoints
-     =========================== */
+
 
   --bp-mobile: 480px;
   --bp-tablet: 768px;
@@ -85,9 +71,7 @@
   --bp-desktop: 1280px;
   --bp-wide: 1440px;
 
-  /* ===========================
-     ⚡ Анимации
-     =========================== */
+
 
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;

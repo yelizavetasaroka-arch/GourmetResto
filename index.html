@@ -533,61 +533,91 @@
     <div class="sidebar__reservation-widget">
         <h2 class="sidebar__title">Быстрое бронирование</h2>
 
-        <form class="reservation-form">
-            <label class="reservation-form__label">
-                Дата:
-                <input class="reservation-form__input" type="date" name="date">
-            </label>
+        <form class="reservation-form" novalidate>
+    <label class="reservation-form__label">
+        Дата:
+        <input class="reservation-form__input" type="date" name="date" required>
+    </label>
 
-            <label class="reservation-form__label">
-                Время:
-                <input class="reservation-form__input" type="time" name="time">
-            </label>
+    <label class="reservation-form__label">
+        Время:
+        <input class="reservation-form__input" type="time" name="time" required>
+    </label>
 
-            <label class="reservation-form__label">
-                Гостей:
-                <select class="reservation-form__select" name="guests">
-                    <option value="">—</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4 и более</option>
-                </select>
-            </label>
+    <label class="reservation-form__label">
+        Гостей:
+        <select class="reservation-form__select" name="guests" required>
+            <option value="">—</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="more">Более 10</option>
+        </select>
+    </label>
 
-            <label class="reservation-form__label">
-                Телефон:
-                <input class="reservation-form__input" type="tel" name="phone" placeholder="Введите номер телефона для связи">
-            </label>
+    <label class="reservation-form__label">
+        Телефон:
+        <input class="reservation-form__input" type="tel" name="phone" placeholder="+375 XX XXX-XX-XX" required>
+        <small class="form-hint">Формат: +375XXXXXXXXX </small>
+    </label>
 
-            <label class="reservation-form__label">
-                Пожелания:
-                <textarea class="reservation-form__textarea" name="comment" rows="3" placeholder="Ваши пожелания (необязательно)"></textarea>
-            </label>
+    <label class="reservation-form__label">
+        Пожелания:
+        <textarea class="reservation-form__textarea" name="comment" rows="3" placeholder="Ваши пожелания (необязательно)"></textarea>
+    </label>
 
-            <button class="btn btn-primary reservation-form__btn">Отправить заявку</button>
-        </form>
+    <button class="btn btn--primary reservation-form__btn" type="submit">Отправить заявку</button>
+</form>
+
     </div>
 
+    <section class="promo-section">
+    <h2 class="promo-section__title">Акции и спецпредложения</h2>
+
+    <button class="promo-add-btn">➕ Добавить акцию</button>
+
+    <div class="promo-list" id="promoList"></div>
+</section>
+
+<!-- Шаблон акции -->
+<template id="promoItemTemplate">
     <div class="promo">
-        <h3 class="promo__title">Акции и спецпредложения</h3>
+        <p class="promo__text"></p>
 
-        <p class="promo__text">
-            Счастливые часы — скидка 20%
-            <time datetime="16:00">с 16:00</time>
-            до
-            <time datetime="18:00">18:00</time>
-        </p>
-
-        <p class="promo__text">
-            Бизнес‑ланч — выгодные предложения
-            <time datetime="12:00">с 12:00</time>
-            до
-            <time datetime="16:00">16:00</time>
-        </p>
+        <div class="promo__actions">
+            <button class="promo__btn promo__edit" title="Редактировать">✎</button>
+            <button class="promo__btn promo__delete" title="Удалить">✕</button>
+        </div>
     </div>
+</template>
 
+<!-- Модальное окно -->
+<template id="promoModalTemplate">
+    <div class="promo-modal">
+        <div class="promo-modal__content">
+            <h3 class="promo-modal__title"></h3>
+
+            <textarea class="promo-modal__input" rows="4" placeholder="Введите текст акции..."></textarea>
+
+            <div class="promo-modal__actions">
+                <button class="btn btn--primary promo-modal__save">Сохранить</button>
+                <button class="btn btn--outline promo-modal__cancel">Отмена</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+  
+    
 </aside>
+
 
 
        
@@ -595,8 +625,10 @@
 <section id="reviews" class="reviews">
     <h2 class="reviews__title">Отзывы наших гостей</h2>
     
-    <!-- Grid для отзывов -->
-    <div class="reviews__grid">
+     <div class="reviews__slider">
+        <button class="reviews__btn reviews__btn--prev" type="button">‹</button>
+    <div class="reviews__viewport">
+            <div class="reviews__grid reviews__track">
         <!-- Отзыв 1 -->
         <div class="review">
             <div class="review__header">
@@ -645,8 +677,42 @@
                 <img src="images/rev3-2.jpg" alt="Фото интерьера" class="review__photo">
             </div>
         </div>
+
+        <!-- Отзыв 4 -->
+<div class="review">
+    <div class="review__header">
+        <img src="images/avatar2.webp" alt="Сергей" class="review__avatar">
+        <div>
+            <h3 class="review__name">Сергей</h3>
+            <div class="review__stars review__stars--5"></div>
+        </div>
+    </div>
+
+    <p class="review__text">
+        Отличное обслуживание и очень уютная атмосфера. Паста карбонара — просто шедевр!
+    </p>
+
+    <div class="review__photos">
+        <img src="images/rev2-2.webp" alt="Фото блюда" class="review__photo">
+         <img src="images/rev1-1.webp" alt="Фото из ресторана" class="review__photo">
+    </div>
+</div>
+
+          </div>
+
+
+        </div>
+
+    
+
+
+        <button class="reviews__btn reviews__btn--next" type="button">›</button>
     </div>
 </section>
+
+
+
+
 
     </main>
 
@@ -693,6 +759,7 @@
     </div>
 </footer>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
+
 </body>
 </html>

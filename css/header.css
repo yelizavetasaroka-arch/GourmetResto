@@ -1,6 +1,3 @@
-/* =========================================
-   HEADER — главный блок
-========================================= */
 
 .header {
     position: relative;
@@ -13,7 +10,7 @@
     color: var(--color-white);
 }
 
-/* затемнение */
+
 .header__overlay {
     position: absolute;
     inset: 0;
@@ -21,7 +18,7 @@
     z-index: 0;
 }
 
-/* контейнер */
+
 .header__container {
     position: relative;
     z-index: 1;
@@ -33,9 +30,7 @@
     flex-direction: column;
 }
 
-/* =========================================
-   TOPBAR — навигация
-========================================= */
+
 
 .header__topbar {
     display: flex;
@@ -87,9 +82,6 @@
     font-weight: var(--fw-medium);
 }
 
-/* =========================================
-   БУРГЕР-МЕНУ (ПРОСТОЕ И РАБОЧЕЕ)
-========================================= */
 
 .header__burger {
     display: none;
@@ -120,16 +112,16 @@
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Мобильное меню - УПРОЩЕННОЕ */
+
 .header__mobile-nav {
     position: fixed;
     top: 0;
-    left: 0; /* Меняем с right на left */
+    left: 0; 
     width: 100%;
     height: 100vh;
     background: var(--color-bg-alt);
     padding: 100px 40px 40px;
-    transform: translateX(-100%); /* Скрыто слева */
+    transform: translateX(-100%); 
     transition: transform var(--transition-base);
     z-index: 1000;
     overflow-y: auto;
@@ -137,7 +129,7 @@
 }
 
 .header__mobile-nav.active {
-    transform: translateX(0); /* Показываем */
+    transform: translateX(0); 
 }
 
 .header__mobile-nav-list {
@@ -166,7 +158,7 @@
     padding: 10px 0;
 }
 
-/* Оверлей - УПРОЩЕННЫЙ */
+
 .header__mobile-overlay {
     position: fixed;
     top: 0;
@@ -185,9 +177,7 @@
     visibility: visible;
 }
 
-/* =========================================
-   HERO — заголовок лесенкой
-========================================= */
+
 
 .header__hero {
     flex: 1;
@@ -207,7 +197,7 @@
     align-items: center;
 }
 
-/* Заголовок */
+
 .header__title {
     margin: 0 0 var(--space-xl) 0;
     font-family: var(--font-title);
@@ -223,12 +213,12 @@
     font-size: 64px;
 }
 
-/* Вторая строка с отступом */
+
 .title-line--indent {
     margin-left: 250px;
 }
 
-/* Контейнер для кнопок */
+
 .header__actions {
     display: flex;
     gap: var(--space-md);
@@ -237,11 +227,9 @@
     width: 100%;
 }
 
-/* =========================================
-   АДАПТИВ HEADER
-========================================= */
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1440px) {
     .title-line {
         font-size: 54px;
     }
