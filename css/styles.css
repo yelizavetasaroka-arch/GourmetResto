@@ -3,3 +3,28 @@
 @import url("header.css");
 @import url("main.css");
 @import url("footer.css");
+/* Индикатор загрузки */
+#loadingIndicator .spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--color-accent);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.menu-item__ingredients {
+    font-size: var(--fs-xs);
+    color: var(--color-text-muted);
+    margin-top: 4px;
+}
+
+.unavailable {
+    color: #dc3545;
+    font-size: var(--fs-xs);
+    margin-left: 8px;
+}

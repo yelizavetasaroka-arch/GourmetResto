@@ -1,0 +1,97 @@
+{
+  "restaurant": {
+    "name": "GourmetResto",
+    "address": "г. Минск, пл. Свободы, 5",
+    "phone": "+375 (29) 123-45-02"
+  },
+  "categories": [
+    { "id": 1, "name": "Салаты", "slug": "salads" },
+    { "id": 2, "name": "Супы", "slug": "soups" },
+    { "id": 3, "name": "Горячие блюда", "slug": "hot" },
+    { "id": 4, "name": "Пицца", "slug": "pizza" },
+    { "id": 5, "name": "Десерты", "slug": "desserts" },
+    { "id": 6, "name": "Блюда от шефа", "slug": "chef" }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Салат Цезарь",
+      "category_id": 1,
+      "price": 23,
+      "description": "Обжаренная курица, ромейн, томаты, соус цезарь, выдержанный сыр",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Салат Нисуаз",
+      "category_id": 1,
+      "price": 26,
+      "description": "Тунец, яйцо, фасоль, оливки, картофель",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Томатный суп",
+      "category_id": 2,
+      "price": 18,
+      "description": "Томаты, базилик, сливки, чеснок",
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Луковый суп",
+      "category_id": 2,
+      "price": 21,
+      "description": "Говяжий бульон, карамелизированный лук, гренки с сыром",
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Стейк",
+      "category_id": 3,
+      "price": 45,
+      "description": "Говядина, специи, сливочное масло",
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "Ризотто с гребешком",
+      "category_id": 3,
+      "price": 28,
+      "description": "Рис, бульон биск, гребешок, цветная капуста",
+      "available": true
+    },
+    {
+      "id": 7,
+      "name": "Маргарита",
+      "category_id": 4,
+      "price": 22,
+      "description": "Томаты, моцарелла, базилик",
+      "available": true
+    },
+    {
+      "id": 8,
+      "name": "Пепперони",
+      "category_id": 4,
+      "price": 25,
+      "description": "Пепперони, моцарелла, томатный соус",
+      "available": true
+    },
+    {
+      "id": 9,
+      "name": "Тирамису",
+      "category_id": 5,
+      "price": 18,
+      "description": "Кофе, маскарпоне, какао",
+      "available": true
+    },
+    {
+      "id": 10,
+      "name": "Чизкейк",
+      "category_id": 5,
+      "price": 19,
+      "description": "Сливочный сыр, ваниль, печенье",
+      "available": true
+    }
+  ]
+}
